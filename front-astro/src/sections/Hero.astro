@@ -1,0 +1,115 @@
+---
+
+---
+<div class='hero-wrapper w-screen relative'>
+    <section class="hero flex items-start justify-center text-black h-full">
+        <div class='left flex flex-col w-3/5 h-3/4 pr-20 pt-20 items-start justify-start gap-y-10'>
+            <h2>Aumenta tu rentabilidad hasta un 15%</h2>
+            <h1>M.IA, tu asistente financiero virtual</h1>
+            <h2>Que se conecta a TODOS tus sistemas y te apoya en la toma de decisiones.</h2>
+            
+        </div>
+        <div class='logocontainer flex items-start justify-start pt-40 w-3/5'>
+            <img src="./public/movilfoto.jpg" alt="Logo" class="logo  w-full z-20 h-auto  mt-20">
+        </div>
+    </section>
+    <div class='bg-image'></div>
+</div>
+
+    
+<style>
+    .hero-wrapper{
+        height:100vh;
+        background-color:#F7F5F2;
+    }
+     .hero{
+        background-color: #F7F5F2;
+        background-size: contain;
+        background-repeat:no-repeat;
+        width:100vw; 
+        background-image: url('../public/last-removebg-preview.png');
+        background-position:bottom left; 
+        z-index:10;
+    }
+    
+    .logocontainer{
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        width: 30%;
+        margin-top: 0px;
+    }
+    h1{
+        font-weight:bold;
+        font-size:100px;
+        line-height:1;
+    }
+    h2{
+        font-size:40px;
+        line-height:1;
+        color:#4A4A4A
+    }
+    .logo{
+        border-radius:90px;
+    }
+  
+
+    button{
+        background-color:#204D74;
+        color:white;
+        font-weight:bold;
+        padding:3px;
+        border-radius:8px;
+        height:50px;
+    }
+    @media(max-width:1339px){
+        .hero-wrapper{
+            height:100vh;
+            display:flex;
+            align-items:start;
+            justify-content:start;
+        }
+        section{
+            flex-direction:column-reverse;
+            padding-top:0px;
+            justify-content:start;
+
+
+        }
+        .left{
+            width:100%;
+            padding-left:40px;
+            padding-right:40px;
+        }
+        .logocontainer{
+            display:none;
+        }
+        /* .logocontainer{
+            width:100%;
+            padding-top:0px
+            
+        }
+        .logo{
+            width:50%;
+        } */
+    }
+    @media(max-width:589px){
+        .hero-wrapper{
+            height:110vh
+            
+        }
+        .logocontainer{
+            display:none;
+        }
+        h1{
+        font-weight:bold;
+        font-size:80px;
+        line-height:1;
+    }
+    }
+    
+    
+
+   
+	
+</style>

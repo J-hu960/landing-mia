@@ -1,0 +1,79 @@
+.header{
+  align-items:start;
+  justify-content:start;
+}
+   section{
+      background-color:#F7F5F2;
+      height:40vh;
+      width:100vw;
+      padding:40px
+   }
+   .wrapp-formulario{
+      background-color:#EAEAEA;
+      box-shadow: 2px 2px 2px gray;
+      
+   }
+  h4{
+      margin-left:10%;
+      font-weight:bold;
+      font-size:56px;
+  }
+  .mensaje{
+    color:#204D74;
+    font-weight:bold;
+    font-size:26px;
+    line-height:1;
+    margin-bottom:10px;
+
+  }
+  .btn-enviar{
+    background-color:#204D74;
+  }
+  .btn-enviar:hover{
+    background-color:#1B3E5C;
+  }
+
+
+  .succesMessage {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.succesMessageVisible {
+    opacity: 1;
+}
+
+.succesMessageHidden {
+    opacity: 0;
+}
+  
+  @media(max-width:1270px){
+     
+      section{
+          flex-direction:column;
+          height:auto;
+          gap-y:40px;
+          padding-left:20px;
+          padding-right:20px;
+
+          
+      }
+      header{
+          width:100%;
+          margin-bottom:40px;
+      }
+      form{
+          margin-bottom:40px;
+  }
+
+  .header{
+    width:100vw;
+    align-items:center;
+    justify-content:center;
+    padding:20px
+  }
+  p{
+    text-align:center;
+  }
+
+}
