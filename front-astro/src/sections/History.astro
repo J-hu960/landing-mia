@@ -2,24 +2,23 @@
 
 ---
 <section class="history-section flex flex-col lg:flex-row w-screen items-center justify-center gap-x-12 px-40 pb-10 ">
-    <img src="./public/jordi.png" alt="esquema" class=" esquema w-90 h-auto rounded-full">
-    <div class='historia flex flex-col items-center justify-center'>
+    <img src="./public/jordi.png" alt="esquema" class=" esquema w-90 h-auto z-10 rounded-full">
+    <div class='historia flex flex-col items-center  justify-center'>
       
-        <p >¡Hola! Soy Jordi, después de mas de 15 años solucionando problemas de los equipos de Finanzas con tecnología, distintos tamaños, distintos sectores. Me lanzo a la aventura de crear M.IA; una revolución para Finanzas, un asistente que te permitara centrarte en lo importante, ayudar a negocio. Del resto se ocupa M.IA, nada de excel, conciliaciones, cuadres, check lists ... M.IA sera tu asistente y te dara la información que necesites</p>
+        <p  class='z-10'>¡Hola! Soy Jordi, después de mas de 15 años solucionando problemas de los equipos de Finanzas con tecnología, distintos tamaños, distintos sectores. Me lanzo a la aventura de crear M.IA; una revolución para Finanzas, un asistente que te permitara centrarte en lo importante, ayudar a negocio. Del resto se ocupa M.IA, nada de excel, conciliaciones, cuadres, check lists ... M.IA sera tu asistente y te dara la información que necesites</p>
         <div class=' w-full flex items-center justify-center mt-6'>
-            <button
+        <a href='#footer'
           type="submit"
-          class=" btn-enviar w-96 text-white font-bold py-2 px-4 rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          class="btn-enviar text-center w-96 text-white font-bold py-2 px-4 rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
         >
         ¡Entérate primero!
-        </button>
+        </a>
         </div>
     </div>
     
 </section>
 <style>
     section{
-        z-index:10;
         margin-top:-150px
     }
     p{
@@ -47,3 +46,12 @@
  
     
 </style>
+<script>
+    document.querySelector('.btn-enviar').addEventListener('click', (event) => {
+      event.preventDefault();
+      const targetId = event.target.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+  
