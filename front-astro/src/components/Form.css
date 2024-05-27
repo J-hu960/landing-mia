@@ -11,6 +11,11 @@
    .wrapp-formulario{
       background-color:#EAEAEA;
       box-shadow: 2px 2px 2px gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
       
    }
   h4{
@@ -41,10 +46,13 @@
 
 .succesMessageVisible {
     opacity: 1;
+    background-color: #C6E0F4;
+    color: #204D74;
 }
 
 .succesMessageHidden {
     opacity: 0;
+    
 }
   
   @media(max-width:1270px){

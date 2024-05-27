@@ -2,10 +2,10 @@
 import {Icon} from 'astro-icon/components'
 import Form from '../components/Form.jsx'
 ---
-<section id='footer' class="flex items-center p-20 justify-around text-black  ">
+<section id='footer' class="flex items-start px-20 justify-around text-black  ">
     <header class='w-2/4  flex flex-col header'>
-        <h4>Empieza ahora</h4>
-        <p class=''>No dejes que la gestión financiera sea una carga. Con M.IA, puedes simplificar tus procesos, ahorrar tiempo y dinero, y tomar decisiones estratégicas con confianza. 
+        <h2 class='text-start w-full'>Empieza ahora</h2>
+        <p class='mt-4 textoIntro'>No dejes que la gestión financiera sea una carga. Con M.IA, puedes simplificar tus procesos, ahorrar tiempo y dinero, y tomar decisiones estratégicas con confianza. 
            <strong> ¡Regístrate hoy y transforma la manera en que manejas las finanzas de tu negocio!</strong>
         </p>
     </header>
@@ -24,25 +24,29 @@ import Form from '../components/Form.jsx'
 
 </section>
 <style>
+  .textoIntro{
+    font-size:26px;
+    color:#4A4A4A;
+
+  }
   .header{
     align-items:start;
     justify-content:start;
   }
      section{
-        background-color:#F7F5F2;
-        height:40vh;
+        background-color:#fff;
+        height:50vh;
         width:100vw;
-        padding:40px
      }
      .wrapp-formulario{
         background-color:#EAEAEA;
         box-shadow: 2px 2px 2px gray;
         
      }
-    h4{
-        margin-left:10%;
+    h2{
         font-weight:bold;
-        font-size:56px;
+        font-size:60px;
+        margin-left:0px;
     }
     .mensaje{
       color:#204D74;
@@ -60,6 +64,12 @@ import Form from '../components/Form.jsx'
     }
     
     @media(max-width:1270px){
+      h2{
+         padding:0px;
+         line-height:1;
+         margin-left:0px;
+         text-align:center;
+      }
        
         section{
             flex-direction:column;
@@ -67,6 +77,7 @@ import Form from '../components/Form.jsx'
             gap-y:40px;
             padding-left:20px;
             padding-right:20px;
+            align-items:center;
 
             
         }
@@ -86,8 +97,15 @@ import Form from '../components/Form.jsx'
     }
     p{
       text-align:center;
+      width:55ch
     }
   
+  }
+  @media(max-width:662px){
+        p{
+          width:90%;
+        } 
+
   }
 
     

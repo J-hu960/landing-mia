@@ -1,10 +1,10 @@
 ---
 
 ---
-    <section class='text-black' >
-      <aside class='w-full'>
+    <section class='text-black pt-10' >
+      <header class='w-full'>
             <h2 class='font-bold  text-center'>¿Te planteas habitualmente estas questiones?<h2>
-        </aside>
+        </header>
         <ul class="faq-list pt-20 ">
                 <li>
                     <span class="question">Sistemas fragmentados y falta de comunicación</span>
@@ -27,8 +27,10 @@
                     <span class="answer">“Los informes financieros son confusos y difíciles de interpretar”</span>
                 </li>
         </ul>
-        <div class='textandfoto my-16 w-full px-15 flex items-center justify-around gap-x-12'>
-            <p class='parrafo mt-12 pb-32 ml-16 '>Gestionar las finanzas de tu cadena de restaurantes no debería ser una tarea titánica. 
+        <hr class="separator">
+
+        <div class='textandfoto my-16 w-full px-15 flex items-center justify-around mt-56 gap-x-12'>
+            <p class='parrafo mt-12  ml-16 '>Gestionar las finanzas de tu cadena de restaurantes no debería ser una tarea titánica. 
                 En M.IA, entendemos los desafíos únicos que enfrentas. Por eso, hemos creado un asistente financiero
                  virtual que transforma la manera en que gestionas tus finanzas
                 , permitiéndote centrarte en lo que realmente importa:
@@ -43,19 +45,26 @@
 
     </section>
 <style>
+  
+   
     h2{
         font-size:60px;
         line-height:1;
     }
      section{
         width:100vw;
-        background-color:#F7F5F2;;
+        background-color:#ffff;;
         height:auto;
         display:flex;
         flex-direction:column;
         justify-content:start;
         align-items:center;
-        padding-top:40px;
+        background-image: url('../public/bg3.png');
+        background-position:  left; 
+        background-size:contain;
+        background-repeat:no-repeat;
+        z-index:20;
+       
     }
     .parrafo{
         width:50%;
@@ -65,6 +74,7 @@
     .faq-list {
         list-style-type: none;
         margin: 0;
+       
 
     }
     .faq-list li {
@@ -72,11 +82,11 @@
     }
     .question {
         font-weight: bold;
-        font-size: 22px;
+        font-size: 32px;
         text-align:center
     }
     .answer {
-        font-size: 18px;
+        font-size: 26px;
         color: #333;
         text-align:center
 
@@ -86,7 +96,6 @@
         display:flex;
         flex-direction:column;
      
-
     }
 
     @media(max-width:1389px){
@@ -95,9 +104,19 @@
         justify-content:start;
         align-items:start;
         height:auto;
-        padding-left:20px
+        padding-left:20px;
+        background-image:none;
 
     }
+    .separator {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #204D74;
+    margin: 40px 0;
+  }
+  
+
     ul{
         width:100%;
         padding-top:40px;
@@ -110,7 +129,8 @@
         flex-direction:column;
         align-items:center;
         justify-content:start;
-        margin-top:0px
+        margin-top:5px
+
     }
     .fotoContainer{
         width:500px;
@@ -118,9 +138,9 @@
         margin-top:50px
     }
     .parrafo{
-        width:80%;
+        width:90%;
         padding:0px;
-        font-size:20px;
+        font-size:26px;
         margin-left:0px
     }
 
@@ -130,6 +150,9 @@
         padding-right:20px;
 
     }
+
+    @media(max-width:860px){
+       }
     
     
 </style>

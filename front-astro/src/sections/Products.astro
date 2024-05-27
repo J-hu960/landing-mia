@@ -1,9 +1,13 @@
 ---
 
 ---
-<section class="section-container flex items-center px-10 gap-x-10 justify-around text-white ">
-    
+<section class="section-container flex items-center px-10 py-10 gap-x-10 justify-around text-white ">
+    <aside class='flex flex-col items-center justify-center gap-y-10'>
+        <img src="./public/esquemaMIA2.png" alt="esquema" class=" esquema w-90 h-auto rounded-lg">
+    </aside>
         <ul class="faq-list ">
+            <h2 class='text-start font-bold text-white mb-6'>¿Cómo puede ayudarte M.IA?</h2 >
+
             <li >
                 <span class="question">Automatización completa</span>
                 <span class="answer">“M.IA automatiza la gestión de tesorería, permitiéndote ahorrar tiempo y reducir el riesgo de errores”</span>
@@ -21,16 +25,18 @@
                 <span class="answer">“M.IA analiza y responde a cualquier pregunta de forma detallada y precisa en tiempo real”</span>
             </li>       
         </ul>
-        <aside class='flex flex-col items-center justify-center gap-y-10'>
-             <h3 class='text-center text-4xl font-bold text-white'>¿Cómo puede ayudarte M.IA?</h3 >
-             <img src="./public/esquemaMIA2.png" alt="esquema" class=" esquema w-90 h-auto rounded-lg">
-         </aside>
+       
 </section>
 <style>
+    h2{
+        font-size:60px;
+        line-height:1.2;
+
+    }
      section{
         width:100vw;
         background-color:#204d74;
-        height:65vh;
+        height:auto;
     }
     .faq-list {
         list-style-type: none;
@@ -41,10 +47,10 @@
     }
     .question {
         font-weight: bold;
-        font-size: 22px;
+        font-size: 32px;
     }
     .answer {
-        font-size: 18px;
+        font-size: 26px;
         }
 
     li{
@@ -54,6 +60,12 @@
     }
    
     @media(max-width:1270px){
+        h2{
+            text-align:center;
+            width:85vw;
+            padding-left:0px;
+            padding-right:0px;
+        }
        
         section{
             flex-direction:column-reverse;
@@ -77,7 +89,6 @@
         }
         .question {
         font-weight: bold;
-        font-size: 22px;
         text-align:center;
          }
         .answer {

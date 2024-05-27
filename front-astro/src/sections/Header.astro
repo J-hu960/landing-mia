@@ -1,37 +1,50 @@
 
 
-<header class="header-container">
-    <h1>M.IA</h1>
+<header class="header-container px-20">
+    <h2>M.IA</h2>
     <a  href='#footer'   
           type="submit"
-          class=" btn-enviar2 w-56 h-12 mr-10 text-white font-bold py-2 px-4 rounded-md  focus:outline-none focus:ring-2  "
+          class=" btn-enviar2 w-56 h-12  text-white font-bold flex items-center justify-center rounded-md  focus:outline-none focus:ring-2  "
         >
         ¡Entérate primero!
         </a>
 </header>
 
 
-
 <style>
      header{
         width:100vw;
         background-color:#204d74;
-        height:60px;
+        height:70px;
         display:flex;
         justify-content:space-between;
         align-items:center
     }
-    h1{
-        margin-left:10%;
+    h2{
         font-weight:bold;
-        font-size:26px;
-    }
+        padding-left:55px;
+        font-size:36px;
+      }
     .btn-enviar2{
       background-color:#FFFFFF;
       color:#4A4A4A
     }
     .btn-enviar2:hover{
       background-color:#F5F5F5;
+    }
+
+    @media(max-width:867px){
+      h2{
+        padding-left:0px;
+
+      }
+      header{
+        padding-left:5px;
+        padding-right:5px
+
+      }
+
+
     }
 </style>
 
